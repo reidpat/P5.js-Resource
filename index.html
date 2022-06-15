@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <title>P5.js Resource Sheet</title>
+</head>
+
+<body>
+    <div>
+
+        <div class="content-container">
+
+            <article class="content" id="javascript">
+                    <h1>P5.js Resource Sheet</h1>
+                <h2>Javascript</h3>
+                    <li>Data Types
+<pre class="prettyprint"><code>"string"    ...      ...   //string
+10          ...      ...   //number
+true, false          ...   //boolean
+null, undefined      ...   //no value
+[1, 2, "a", false]   ...   //list
+{var1: value, var2: value} //object
+</code></pre>
+
+                    </li>
+                        <li>Variables and Output
+<pre class="prettyprint"><code>//let variableName = Information
+let x = 0;
+
+console.log(x) //prints value of x
+</code></pre>
+                        </li>
+                        <li>If/Then
+<pre class="prettyprint"><code>if(Condition){
+    //code run when Condition is true
+}
+else {
+    //code run when Condition is false
+}
+== !=  //equal, not equal to
+>  <   //greater than, less than
+>= <=  //greater, less than or equal
+&& ||  //and, or 
+</code></pre>
+                        </li>
+                        <li>Objects
+<pre class="prettyprint lang-js"><code>//initializing an object
+let name = new ObjectName()
+
+//access object variable
+objectName.variableName
+
+//run object function
+objectName.functionName()
+
+//setting object properties
+objectName.property = variable/function
+</code></pre>
+                        </li>
+
+                        <li>Functions
+<pre class="prettyprint"><code>//defining functions
+function name(var1, var2){
+    //code
+}
+//calling functions
+name(var1, var2)
+</code></pre>
+                        </li>
+                        <li>Loops
+<pre class="prettyprint"><code>// (start;    end;    countBy)
+for(let i = 0; i < 10; i += 1){
+    //code
+}
+while(true){
+    //code
+}
+</code></pre>
+                        </li>
+
+                        <li>Lists
+<pre class="prettyprint"><code>let name = []    //declaring a list
+name.push(item)  //adding to a list
+name[index]      //getting an item from a list</code></pre>
+                        </li>
+                <h2>Processing</h2>
+                <li>Structure
+<pre class="prettyprint"><code>//runs once when program starts
+function setup(){
+    createCanvas(800,600); //width, height
+}
+//run continuously after setup
+function draw(){
+    //rendering loop
+}</code>
+</pre>
+                </li>
+<li>System Variables<pre class="prettyprint"><code>windowWidth / windowHeight
+//width / height of window
+width / height
+//width / height of canvas
+mouseX / mouseY
+//current x / y of mouse position</code></pre></li>
+
+                <li>Color<pre class="prettyprint"><code>fill(120); //gray: 0-255
+fill(100,125,255); //r, g, b: 0-255
+fill(255, 0, 0, 50); //r, g, b, alpha (opacity)
+fill('red'); //color string
+fill('#ccc'); //3-digit hex
+fill('#222222'); //6-digit hex fill
+color(0, 0, 255); //p5.Color object</code></pre></li>
+                <li>Images
+<pre class="prettyprint"><code>let img;
+function preload() {
+    img = loadImage('fileName.jpg/png');
+}
+function draw() {
+    image(img, x, y, w, h);
+}
+</code></pre>
+                </li>
+                <li>Canvas and Shapes
+<pre class="prettyprint"><code>line(x1, y1, x2, y2);
+ellipse(x, y, width, height);
+rect(x, y, width, height);
+
+text("string", x, y, boxwidth, boxheight);</code></pre>
+                </li>
+                <li id="canvas-images">
+                    <figure>
+                        <figcaption>Grid</figcaption>
+                        <img src="GridCapture.jpg" alt="">    
+                    </figure>
+                    <figure>
+                        <figcaption>Line</figcaption>
+                        <img src="LineCapture.jpg" alt="">    
+                    </figure>
+                    <figure>
+                        <figcaption>Ellipse</figcaption>
+                        <img src="EllipseCapture.jpg" alt="">    
+                    </figure>
+                    <figure>
+                        <figcaption>Rectangle</figcaption>
+                        <img src="RectCapture.jpg" alt="">    
+                    </figure>
+                    </li>
+                    <p>Inspired by: <a href="https://bmoren.github.io/p5js-cheat-sheet/">https://bmoren.github.io/p5js-cheat-sheet/</a></p>
+                <!-- <h2>p5.play</h2> -->
+            </div>
+                
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>

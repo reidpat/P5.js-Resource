@@ -1,0 +1,116 @@
+:root {
+    --primary: #2a324b;
+    --ruby: #ed225d;
+  }
+  @media print {
+    html {
+      width: 8.5in;
+      margin: 0 0 0 0;
+      padding: 0;
+    }
+  }
+  @page{
+    margin: 10px;
+  }
+  html,
+  body {
+    font-family: 'Poppins', sans-serif;
+    width: 11in;
+    height: 8.5in;
+    
+    /* border-right: 1px solid black;
+    border-bottom: 1px solid black;*/
+  }
+  body{
+    padding: 15px;
+    color: var(--ruby);
+  }
+  
+  * {
+    margin: 0px;
+    box-sizing: border-box;
+    /* filter: grayscale(100);  */
+  }
+  .content-container{
+    width: 11in;
+    height: 8.5in;
+  } 
+  .content{
+    padding: 0px 10px;
+    display: flex;
+    align-content: center;
+    column-gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: calc(100% - 50px);
+  }
+
+  .content > * {
+    flex-shrink: 2;
+    max-width: 34%;
+  }
+li::marker{
+  content: "";
+}
+li{
+  font-weight: 600;
+  font-size: smaller;
+  color: var(--ruby);
+}
+li > *{
+  background-color: #fafafa;
+  margin: 5px 0px;
+  padding: 10px;
+
+}
+
+.prettyprint{
+  border: 1px solid lightgray;
+  font-weight: normal;
+  font-size: medium;
+
+}
+pre{
+  border-radius: 5px;
+  padding: 10px !important;
+}
+
+h1{
+  background: var(--ruby);
+  color: white;
+  padding: 0px 5px;
+}
+
+#canvas-images{
+  display: flex;
+  flex-wrap: wrap;
+}
+#canvas-images > * {
+  background-color: white;
+  padding: 0px 10px;
+  margin: 0px;
+}
+#canvas-images > figure > img{
+  width: 110px
+}
+#credit{
+  position: absolute;
+  bottom: 10px;
+  right: 60px;
+  font-size: smaller;
+  max-width: 100%;
+}
+
+.str { color: #080 }  /* string content */
+.kwd { color: #7a5a3a !important}  /* a keyword */
+.com { color: rgb(81, 81, 81) !important}  /* a comment */
+.typ { color: #0b7ca9 !important }  /* a type name */
+.lit { color: #066 }  /* a literal value */
+/* punctuation, lisp open bracket, lisp close bracket */
+.pun, .opn, .clo { color: #660 }
+.tag { color: #008 }  /* a markup tag name */
+.atn { color: #606 }  /* a markup attribute name */
+.atv { color: #080 }  /* a markup attribute value */
+.dec, .var { color: #0b7ca9 !important }  /* a declaration; a variable name */
+.fun { color: red }  /* a function name */
+.pln {color: #0b7ca9 !important}
